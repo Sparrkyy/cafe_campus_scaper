@@ -9,7 +9,7 @@ do
     echo "Tickets not available"
   else 
     echo "Tickets available"
-    say "TICKETS FOUND"
+    node notifyslack.js "Found Tickets on https://lepointdevente.com/tickets/cafe-campus-danse-club-discotheque-vendredi-x-large-29-avril"
     break
   fi
 done 
