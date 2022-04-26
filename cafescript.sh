@@ -7,9 +7,12 @@ do
   if [ $linesWithAvailable -gt 0 ]
   then
     echo "Tickets not available"
+    echo $linesWithAvailable
+    echo $(date)
   else 
     echo "Tickets available"
-    node notifyslack.js "Found Tickets on https://lepointdevente.com/tickets/cafe-campus-danse-club-discotheque-vendredi-x-large-29-avril"
+    echo $linesWithAvailable
+    node notifyslack.js "Found Tickets on https://lepointdevente.com/tickets/cafe-campus-danse-club-discotheque-mardi-retro-26-avril-2022" 
     break
   fi
 done 
